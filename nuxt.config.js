@@ -30,6 +30,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    // https://composition-api.nuxtjs.org/getting-started/setup
+    '@nuxtjs/composition-api/module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -42,6 +44,15 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  generate: {
+    // https://composition-api.nuxtjs.org/getting-started/setup
+    // Currently there's an issue (https://github.com/nuxt-community/composition-api/issues/44)
+    // with static site generation and async functions which means that you'll need to add time
+    // between pages being generated to allow for any async functions to resolve, if you are pre-generating any of your pages:
+    // choose to suit your project
+    interval: 2000,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

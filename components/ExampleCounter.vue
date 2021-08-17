@@ -12,21 +12,21 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent, ref } from '@nuxtjs/composition-api';
 
-export default Vue.extend({
-  data() {
-    return {
-      count: 0,
+export default defineComponent({
+  setup() {
+    const count = ref(0);
+
+    const decreaseCounter = () => {
+      count.value--;
     };
-  },
-  methods: {
-    decreaseCounter() {
-      this.count--;
-    },
-    increaseCounter() {
-      this.count++;
-    },
+
+    const increaseCounter = () => {
+      count.value++;
+    };
+
+    return { count, decreaseCounter, increaseCounter };
   },
 });
 </script>
