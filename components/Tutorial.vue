@@ -59,11 +59,24 @@
           Welcome to your Nuxt Application
         </h2>
         <p class="mt-3 text-gray-600">
+          The starter uses <b>Nuxt.js</b>, <b>TypeScript</b>, and
+          <b>Tailwind CSS</b>.
+        </p>
+        <p class="mt-3 text-gray-600">
           We recommend you take a look at the
           <a href="https://nuxtjs.org" target="_blank" class="link"
             >Nuxt documentation</a
           >, whether you are new or have previous experience with the
           framework.<br />
+        </p>
+        <p class="mt-3 text-gray-600">
+          It also makes use of the <b>Composition API</b> from Vue 3 with the
+          <a
+            href="https://composition-api.nuxtjs.org/getting-started/introduction"
+            target="_blank"
+            class="link"
+            >Nuxt compatibility module</a
+          >.
         </p>
         <p class="mt-3 text-gray-600">
           For working with Tailwind CSS, look at the
@@ -87,6 +100,7 @@
           <code class="inline-code">pages/index.vue</code>. Have fun!
         </p>
       </div>
+
       <div class="flex justify-center pt-4 space-x-2">
         <a href="https://github.com/nuxt/nuxt.js" target="_blank">
           <svg

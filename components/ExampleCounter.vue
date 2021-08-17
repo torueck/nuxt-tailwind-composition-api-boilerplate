@@ -1,7 +1,11 @@
 <template>
   <div>
     <p class="pt-4 text-gray-600 border-t">
-      Example of how to reuse common components styles from global styles.
+      Example of a component using the composition API syntax.
+    </p>
+    <p class="pt-4 text-gray-600">
+      The button styles are used from the global styles in
+      <code class="inline-code">assets/css/tailwind.css</code>
     </p>
     <div class="flex items-center mt-4 ml-2">
       <button class="btn" @click="decreaseCounter">Decrease</button>
