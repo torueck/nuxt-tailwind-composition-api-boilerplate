@@ -1,7 +1,15 @@
 {
-  "name": "family-recipes",
+  "name": "nuxt-tailwind-composition-api-boilerplate",
+  "description": "A Nuxt.js, TypeScript, Tailwind CSS with composition API boilerplate",
   "version": "1.0.0",
-  "private": true,
+  "keywords": [
+    "nuxt",
+    "typescript",
+    "tailwind",
+    "eslint",
+    "prettier",
+    "jest"
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

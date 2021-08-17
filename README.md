@@ -1,4 +1,12 @@
-# family-recipes
+# Nuxt, TypeScript, Tailwind CSS Boilerplate
+
+## Description
+
+This is a **Nuxt.js** boilerplate, using **TypeScript** and **Tailwind CSS**.
+
+Linting is done with **ESLint** and the code is auto-formatted using **Prettier**.
+
+For unit testing **Jest** is used.
 
 ## Build Setup
 
