@@ -1,0 +1,43 @@
+<template>
+  <div>
+    <p class="pt-4 text-gray-600 border-t">
+      Example of how to reuse common components styles from global styles.
+    </p>
+    <div class="flex items-center mt-4 ml-2">
+      <button class="btn" @click="decreaseCounter">Decrease</button>
+      <button class="ml-2 btn" @click="increaseCounter">Increase</button>
+      <p class="ml-4 font-semibold text-blue-600">count is: {{ count }}</p>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    decreaseCounter() {
+      this.count--;
+    },
+    increaseCounter() {
+      this.count++;
+    },
+  },
+});
+</script>
+
+<style lang="postcss" scoped>
+.btn2 {
+  @apply px-4 py-2
+        font-medium tracking-wide text-white capitalize
+        transition-colors duration-200 transform
+        rounded-md
+        bg-blue-600 hover:bg-blue-500 
+        focus:outline-none focus:bg-blue-500;
+}
+</style>
